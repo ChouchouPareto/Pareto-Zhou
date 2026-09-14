@@ -3,14 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Pareto.周的个人网站" />
-  <title>Pareto.周</title>
+  <meta name="description" content="Pareto.周的 AI 产品作品集：教育陪伴、本地生活与空间思考，记录可体验原型和真实开发进度。" />
+  <title>Pareto.周｜AI 产品作品集</title>
+  <link rel="canonical" href="https://chouchoupareto.github.io/Pareto-Zhou/" />
+  <meta property="og:title" content="Pareto.周｜AI 产品作品集" />
+  <meta property="og:description" content="把真实场景的问题，做成可体验、可验证的 AI 产品。" />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#home">跳到主要内容</a>
   <!-- ========== 导航栏 ========== -->
   <header class="nav" id="navbar">
     <div class="container nav-inner">
@@ -21,7 +26,7 @@
         <a href="#skills" class="nav-link">技能</a>
         <a href="#contact" class="nav-link">联系</a>
       </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单">
+      <button class="nav-toggle" id="nav-toggle" aria-label="打开菜单" aria-controls="nav-links" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -34,14 +39,14 @@
       <div class="hero-rays" id="hero-rays" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-content">
-          <p class="hero-eyebrow">Welcome to</p>
+          <p class="hero-eyebrow">AI PRODUCT · FROM IDEA TO EXPERIENCE</p>
           <h1 class="hero-title">Pareto.周</h1>
           <p class="hero-subtitle">
-            用产品思维，把技术翻译成用户价值
+            把真实场景的问题，做成可体验的 AI 产品。
           </p>
           <p class="hero-desc">
-            专注于 AI 产品的规划、设计与落地。相信好的产品，
-            是让复杂的技术以最简单的方式服务于人。
+            关注教育陪伴、本地生活与空间思考。从需求和交互出发，
+            用 RAG、Agent 与 Vibe Coding 验证产品想法。
           </p>
           <div class="hero-actions">
             <a href="#work" class="btn btn-primary">查看作品集</a>
@@ -66,16 +71,16 @@
         <div class="about-grid">
           <div class="about-text">
             <p>
-              我专注于人工智能领域的产品工作，已有 <strong>X 年</strong>经验。
-              从需求洞察到方案设计，从模型能力评估到产品落地，
-              我致力于让 AI 真正解决实际问题、创造价值。
+              我正在持续构建 AI 产品作品集，关注 <strong>AI 产品经理</strong>方向。
+              从需求澄清、PRD 与交互方案，推进到可运行原型和阶段验证。
+              作品覆盖教育陪伴、本地生活创作与空间思考。
             </p>
             <p>
               我相信产品经理的核心能力，是在「技术可行性」与「用户需求」之间
               找到最优解，并把复杂的事情讲清楚、做明白。
             </p>
             <p>
-              这里先写一段关于你自己的介绍，稍后可以随时替换。
+              我更关心用户在哪一步遇到问题、AI 应该做什么，以及如何用测试和反馈判断这次迭代是否有效。
             </p>
           </div>
           <div class="about-meta">
@@ -88,8 +93,8 @@
               <span class="meta-value">中国 · 浙江省</span>
             </div>
             <div class="meta-item">
-              <span class="meta-label">邮箱</span>
-              <span class="meta-value">you@example.com</span>
+              <span class="meta-label">GitHub 身份</span>
+              <span class="meta-value">@ChouchouPareto</span>
             </div>
           </div>
         </div>
@@ -102,56 +107,51 @@
       <div class="container">
         <h2 class="section-title">作品集</h2>
         <p class="section-subtitle">
-          这里会展示你的 AI 产品项目。以下是占位卡片，后续替换为真实项目即可。
+          四个公开项目，分别说明场景、目的、当前成果与下一步。内容核对于 2026.09.15。
         </p>
 
         <div class="work-grid" id="work-grid">
-          <!-- 占位卡片：后续在这里补充项目 -->
-          <article class="work-card">
-            <div class="work-cover work-cover--placeholder">
-              <span>项目封面</span>
-            </div>
-            <div class="work-body">
-              <h3 class="work-title">项目名称</h3>
-              <p class="work-desc">
-                一句话描述这个项目：它解决了什么问题、你的角色是什么、带来了什么结果。
-              </p>
-              <ul class="work-tags">
-                <li class="tag">AI</li>
-                <li class="tag">产品设计</li>
-              </ul>
+          <article class="work-card" id="project-grokking">
+            <div class="project-cover cover-grokking" aria-hidden="true"><span class="cover-number">01 / AI PRODUCT</span><span class="cover-word">Grokking恼</span><span class="cover-caption">空间交互 · AI 联想 · 产品验证</span></div>
+            <div class="work-body"><div class="project-heading"><h3 class="work-title">Grokking恼</h3><span class="status">v0.3.1 预览</span></div>
+              <p class="work-desc">把零散创意组织成可探索的 2D / 3D 关键词网络，帮助复杂问题梳理与商业方向发散。</p>
+              <dl class="project-progress"><dt>已完成</dt><dd>关键词拆分、空间切换、快捷连线、上下文理解与阶段总结。</dd><dt>下一步</dt><dd>验证真实思考体验，完善导出、正式账户和多设备同步。</dd></dl>
+              <p class="evidence-note">v0.3.1 为独立预览分支；不同分支不等同于同一线上版本。</p>
+              <ul class="work-tags"><li class="tag">空间交互</li><li class="tag">AI 联想</li><li class="tag">产品验证</li></ul>
+              <a class="project-link" href="https://github.com/ChouchouPareto/grokking-nao/tree/release/current-preview-v0.3.1" target="_blank" rel="noopener noreferrer">查看项目与源码 ↗</a>
             </div>
           </article>
 
-          <article class="work-card">
-            <div class="work-cover work-cover--placeholder">
-              <span>项目封面</span>
-            </div>
-            <div class="work-body">
-              <h3 class="work-title">项目名称</h3>
-              <p class="work-desc">
-                一句话描述这个项目：它解决了什么问题、你的角色是什么、带来了什么结果。
-              </p>
-              <ul class="work-tags">
-                <li class="tag">大模型</li>
-                <li class="tag">0 → 1</li>
-              </ul>
+          <article class="work-card" id="project-agan">
+            <div class="project-cover cover-agan" aria-hidden="true"><span class="cover-number">02 / AI PRODUCT</span><span class="cover-word">阿甘学车</span><span class="cover-caption">RAG · 多模态 · 人工协同</span></div>
+            <div class="work-body"><div class="project-heading"><h3 class="work-title">阿甘学车</h3><span class="status">V2.1 Beta</span></div>
+              <p class="work-desc">“超级驾陪”面向驾校学员，把解释、刷题、鼓励与真人帮助串成从报名到拿证的学习服务。</p>
+              <dl class="project-progress"><dt>已完成</dt><dd>科目一题库与 RAG、拍题、错题模考、动态场景卡及校长工单。</dd><dt>下一步</dt><dd>独立语义改写评测、授权题库切换和真实学员试用。</dd></dl>
+              <p class="evidence-note">1,388 道上线题完成原题回归；这不等同于口语改写提问的 RAG 召回率。</p>
+              <ul class="work-tags"><li class="tag">RAG</li><li class="tag">多模态</li><li class="tag">人工协同</li></ul>
+              <a class="project-link" href="https://github.com/ChouchouPareto/agan-driving" target="_blank" rel="noopener noreferrer">查看项目与源码 ↗</a>
             </div>
           </article>
 
-          <article class="work-card">
-            <div class="work-cover work-cover--placeholder">
-              <span>项目封面</span>
+          <article class="work-card" id="project-amajia">
+            <div class="project-cover cover-amajia" aria-hidden="true"><span class="cover-number">03 / AI PRODUCT</span><span class="cover-word">阿嬷学院</span><span class="cover-caption">适老交互 · 受控检索 · 学习闭环</span></div>
+            <div class="work-body"><div class="project-heading"><h3 class="work-title">阿嬷学院</h3><span class="status">v0.5.1 内测</span></div>
+              <p class="work-desc">面向 40—60 岁希望进入家政行业的女性，用大字、播报和 AI 陪学降低学习门槛，让学习效果可以被看见。</p>
+              <dl class="project-progress"><dt>已完成</dt><dd>前测—课程—后测—报告闭环，学习记录、内容审核与对话式陪学。</dd><dt>下一步</dt><dd>本地有未发布迭代；v0.5.2 候选计划聚焦审核、样板课和手机端试学。</dd></dl>
+              <p class="evidence-note">课程仍需专业、安全与版权审核，不作为正式职业培训或证书课程宣传。</p>
+              <ul class="work-tags"><li class="tag">适老交互</li><li class="tag">受控检索</li><li class="tag">学习闭环</li></ul>
+              <a class="project-link" href="https://github.com/ChouchouPareto/amajia-academy" target="_blank" rel="noopener noreferrer">查看项目与源码 ↗</a>
             </div>
-            <div class="work-body">
-              <h3 class="work-title">项目名称</h3>
-              <p class="work-desc">
-                一句话描述这个项目：它解决了什么问题、你的角色是什么、带来了什么结果。
-              </p>
-              <ul class="work-tags">
-                <li class="tag">AI</li>
-                <li class="tag">增长</li>
-              </ul>
+          </article>
+
+          <article class="work-card" id="project-tuanhui">
+            <div class="project-cover cover-tuanhui" aria-hidden="true"><span class="cover-number">04 / AI PRODUCT</span><span class="cover-word">团绘AI</span><span class="cover-caption">本地生活 · 创作工作流 · 界面原型</span></div>
+            <div class="work-body"><div class="project-heading"><h3 class="work-title">团绘AI</h3><span class="status">v1.2.0 界面展示</span></div>
+              <p class="work-desc">让本地生活商家更容易整理门店素材、表达设计需求，将事实确认和方案确认放在创作之前。</p>
+              <dl class="project-progress"><dt>已完成</dt><dd>公开前端展示、一键创作首页、素材分类和专业创作确认流程。</dd><dt>下一步</dt><dd>验证创作流程与真实素材整理体验，模型能力另行开发验收。</dd></dl>
+              <p class="evidence-note">公开版无后端、API 或模型调用，图片与流程仅在浏览器本地演示。</p>
+              <ul class="work-tags"><li class="tag">本地生活</li><li class="tag">创作工作流</li><li class="tag">界面原型</li></ul>
+              <a class="project-link" href="https://github.com/ChouchouPareto/tuanhui-ai-preview" target="_blank" rel="noopener noreferrer">查看项目与源码 ↗</a>
             </div>
           </article>
         </div>
@@ -173,12 +173,12 @@
             <p class="skill-desc">大模型应用、Prompt 设计、模型评估、RAG / Agent</p>
           </div>
           <div class="skill-card">
-            <h3 class="skill-name">数据分析</h3>
-            <p class="skill-desc">用户行为分析、指标体系建设、A/B 实验、SQL</p>
+            <h3 class="skill-name">验证与评测</h3>
+            <p class="skill-desc">测试范围、评测集、用户反馈、安全边界与版本记录</p>
           </div>
           <div class="skill-card">
-            <h3 class="skill-name">工具协作</h3>
-            <p class="skill-desc">Figma、Axure、Jira、飞书、Notion</p>
+            <h3 class="skill-name">原型与工程协作</h3>
+            <p class="skill-desc">Figma、GitHub、飞书、Vibe Coding 与纵向切片</p>
           </div>
         </div>
       </div>
@@ -193,8 +193,8 @@
           无论是工作机会、项目合作，还是想聊聊 AI 产品，都欢迎联系。
         </p>
         <div class="contact-links">
-          <a class="btn btn-primary" href="mailto:you@example.com">发送邮件</a>
-          <a class="btn btn-ghost" href="#" target="_blank" rel="noopener">微信 / 简历</a>
+          <a class="btn btn-primary" href="https://github.com/ChouchouPareto" target="_blank" rel="noopener noreferrer">前往 GitHub ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/ChouchouPareto/Pareto-Zhou/issues" target="_blank" rel="noopener noreferrer">留下交流信息 ↗</a>
         </div>
       </div>
     </section>
@@ -204,7 +204,7 @@
   <footer class="footer">
     <div class="container footer-inner">
       <span>© <span id="year"></span> Pareto.周 · 保留所有权利</span>
-      <span>简约 · 专注 · 创造价值</span>
+      <span>作品集 v1.1.0 · 真实进度，持续更新。</span>
     </div>
   </footer>
 

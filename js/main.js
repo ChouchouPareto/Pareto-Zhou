@@ -16,13 +16,27 @@
   navToggle.addEventListener("click", function () {
     const open = navLinks.classList.toggle("open");
     navToggle.classList.toggle("open", open);
+    navToggle.setAttribute("aria-expanded", String(open));
+    navToggle.setAttribute("aria-label", open ? "关闭菜单" : "打开菜单");
   });
 
   navLinks.querySelectorAll(".nav-link").forEach(function (link) {
     link.addEventListener("click", function () {
       navLinks.classList.remove("open");
       navToggle.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.setAttribute("aria-label", "打开菜单");
     });
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && navLinks.classList.contains("open")) {
+      navLinks.classList.remove("open");
+      navToggle.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.setAttribute("aria-label", "打开菜单");
+      navToggle.focus();
+    }
   });
 
   // ---------- 导航高亮当前 Section ----------
@@ -98,8 +112,8 @@
     noiseAmount: 0,
     distortion: 0.35
   };
-  if (typeof window.initLightRays === "function") {
-    ["hero-rays", "rays-about", "rays-work", "rays-skills", "rays-contact"].forEach(function (id) {
+  if (typeof window.initLightRays === "function" && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    ["hero-rays"].forEach(function (id) {
       var el = document.getElementById(id);
       if (el) window.initLightRays(el, raysConfig);
     });
