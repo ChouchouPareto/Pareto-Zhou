@@ -61,7 +61,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-o
 .kin-wordmark span { color: #afd4ad; }
 .product-shot { display: flex; align-items: center; min-height: 300px; position: relative; background: #f4f4f5; overflow: hidden; }
 .product-shot img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: contain; }
-.shot-grokking { background: #0b0e14; }
+.shot-grokking { background: #eef1f6; }
 .shot-label { position: absolute; left: 16px; bottom: 16px; padding: 6px 12px; background: #fff; color: #27272b; border: 1px solid #e6e6e8; border-radius: 999px; font-size: 11px; }
 .project-details { margin: 16px 0 20px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .project-details summary { cursor: pointer; padding: 14px 0; font-size: 14px; font-weight: 500; color: var(--ink); min-height: 44px; }
